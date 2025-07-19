@@ -1,0 +1,63 @@
+ <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pomodoro Timer</title>
+        <link rel="stylesheet" href="pomodoro.css">
+    </head>
+    
+    <body>
+        <div class="container">
+            <div class="mainBox">
+                <h1 class="headingTimer"><u>Promodoro Timer </u></h1>
+                
+                  <div class="inputtime   userTotalRounds"><div class="input1time">
+                <label for="usertime">Nunber of Total Rounds: </label>
+                <input type="number" id="usertime" placeholder="eg:25" min="1" max="10" ></div>
+                <button class="set-time">Set Rounds</button>
+            </div> 
+                  <div class="inputtime"><div class="input1time">
+                <label for="usertime">Enter Pomodoro time:  </label>
+                <input type="number" id="usertime" placeholder="eg:25" min="1" max="60" ></div>
+                <button class="set-time">Set time</button>
+            </div> 
+             <div class="shortInputBox">
+                <div class="SetShortBreak">
+                    <label for="ShortVac">Short Break Duration:</label>
+                    <input type="number" id="ShortVac" placeholder="eg:20" min="1" max="60">
+                </div>
+                <button class="setShort-time">Set Short Break</button>
+            </div>
+             <div class="longInputBox">
+                <div class="SetLongBreak">
+                    <label for="LongVac">Long Break Duration:</label>
+                    <input type="number" id="LongVac" placeholder="eg:20" min="1" max="60">
+                </div>
+                <button class="setLong-time">Set Long Break</button>
+            </div>
+            <div class="WhichFeature">
+                <div class="WorkTimerFeature">Work Timer</div>
+                <div class="ShortBreakFeature">Short break</div>
+                <div class="LongBreakFeature">Long Break</div>
+                
+            </div>
+           
+             <div class="box">
+                <div class="timer  ">25:00</div>
+                <div class="PomodoroRoundNumber">
+                <div class="RoundNumeric">Round: <span id="roundnumber">1</span>/4</div>
+                <div class="Roundvisual">⚪ ⚪ ⚪ ⚪</div></div>
+                <div class="btn">
+                    <div class="btns start">Start</div>
+                    <div class="btns stop">Pause</div>
+                    <div class="btns reset">Reset</div>
+                </div>
+            </div>
+          
+           
+            </div>
+        </div>
+        <script src="pomodoro.js"></script>
+                </body>
+                </html>
