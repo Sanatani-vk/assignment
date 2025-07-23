@@ -1,0 +1,89 @@
+.header {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(90deg, #232526 0%, #414345 100%);
+    box-shadow: 0 4px 24px 0 rgba(0,0,0,0.18);
+    padding: 0.5rem 2.5vw 0.5rem 2.5vw;
+    border-bottom: 2px solid #ff3c3c33;
+    overflow-x: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.header h1 {
+    color: #ff3c3c;
+    letter-spacing: 4px;
+    font-size: 2.5rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0.5rem 0;
+    text-shadow: 1px 2px 8px #00000044;
+    transition: color 0.2s;
+}
+.header h1:hover {
+    color: #fff;
+    cursor: pointer;
+    text-shadow: 0 0 12px #ff3c3c, 0 0 24px #fff;
+}
+
+.header a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 1.2rem;
+    font-size: 1.25rem;
+    font-weight: 500;
+    padding: 0.4rem 1.1rem;
+    border-radius: 8px;
+    background: linear-gradient(90deg, #ff3c3c33 0%, #23252600 100%);
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+    box-shadow: 0 2px 8px 0 rgba(255,60,60,0.08);
+    display: inline-block;
+}
+.header a:hover, .header a.active {
+    background: linear-gradient(90deg, #ff3c3c 0%, #ffb347 100%);
+    color: #232526;
+    box-shadow: 0 4px 16px 0 #ff3c3c44;
+    text-decoration: none;
+}
+
+.header input[type="text"], .header input[type="search"] {
+    height: 2.2rem;
+    margin-top: 0.5rem;
+    border: none;
+    outline: none;
+    padding: 0 1rem;
+    border-radius: 1rem 0 0 1rem;
+    font-size: 1.1rem;
+    background: #fff;
+    color: #232526;
+    box-shadow: 0 2px 8px 0 #00000011;
+    transition: box-shadow 0.2s;
+}
+.header input[type="text"]:focus, .header input[type="search"]:focus {
+    box-shadow: 0 4px 16px 0 #ff3c3c33;
+}
+
+.header button {
+    height: 2.2rem;
+    border: none;
+    background: linear-gradient(90deg, #ff3c3c 0%, #ffb347 100%);
+    border-radius: 0 1rem 1rem 0;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-left: -4px;
+    padding: 0 1.2rem;
+    box-shadow: 0 2px 8px 0 #ff3c3c22;
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+}
+.header button:hover {
+    background: linear-gradient(90deg, #ffb347 0%, #ff3c3c 100%);
+    color: #232526;
+    box-shadow: 0 4px 16px 0 #ffb34744;
+}

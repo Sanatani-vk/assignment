@@ -1,0 +1,105 @@
+.card{
+  width: 100%;
+  flex-wrap: wrap;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+}
+
+.h1 {
+  color: #ff3c3c;
+  font-size: 2.8rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 3px;
+  font-weight: 800;
+  text-align: center;
+  margin: 4.5rem 0 1.2rem 0; /* Add extra top margin for fixed header */
+  text-shadow: 0 2px 12px #ffb34755, 0 1px 2px #23252644;
+  background: linear-gradient(90deg, #ff3c3c 0%, #ffb347 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  transition: text-shadow 0.2s, color 0.2s;
+  cursor: pointer;
+}
+body {
+  margin: 0;
+  padding-top: 4.2rem; /* Space for fixed header */
+  box-sizing: border-box;
+}
+h1:hover {
+  text-shadow: 0 4px 24px #ff3c3c99, 0 2px 8px #ffb34799;
+  color: #ffb347;
+}
+
+.movie-card {
+  background: linear-gradient(135deg, #232526 0%, #414345 100%);
+  color: #fff;
+  border-radius: 1.2rem;
+  box-shadow: 0 4px 24px 0 rgba(0,0,0,0.18);
+  padding: 1.5rem 1.2rem 1.2rem 1.2rem;
+  margin: 1rem 0;
+  width: 300px;
+  min-height: 420px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: box-shadow 0.2s, transform 0.2s, background 0.2s;
+  position: relative;
+  overflow: hidden;
+}
+.movie-card:hover {
+  box-shadow: 0 8px 32px 0 #ff3c3c55;
+  transform: translateY(-6px) scale(1.03);
+  background: linear-gradient(135deg, #ff3c3c 0%, #232526 100%);
+}
+.movie-card img {
+  width: 90%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 0.8rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 12px 0 #00000033;
+  transition: box-shadow 0.2s;
+}
+.movie-card:hover img {
+  box-shadow: 0 4px 24px 0 #ff3c3c44;
+}
+.movie-card h3 {
+  font-size: 1.35rem;
+  margin: 0.5rem 0 0.2rem 0;
+  color: #ffb347;
+  text-align: center;
+  letter-spacing: 1px;
+}
+.movie-card p {
+  font-size: 1rem;
+  color: #fff;
+  margin: 0.2rem 0 0.5rem 0;
+  text-align: center;
+}
+.movie-card .card-actions {
+  margin-top: auto;
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+  justify-content: center;
+}
+.movie-card button {
+  background: linear-gradient(90deg, #ff3c3c 0%, #ffb347 100%);
+  color: #fff;
+  border: none;
+  border-radius: 0.7rem;
+  padding: 0.5rem 1.2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 2px 8px 0 #ff3c3c22;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+}
+.movie-card button:hover {
+  background: linear-gradient(90deg, #ffb347 0%, #ff3c3c 100%);
+  color: #232526;
+  box-shadow: 0 4px 16px 0 #ffb34744;
+}
